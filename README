@@ -1,0 +1,15 @@
+The directory contains the main python files used for preprocessing and data aggregation as well as for feature training.
+Here follows a brief description of the files in the current folder:
+- Preprocessing.py: Prepares data and generates training-test splits 
+- Station_profile_all.py: Implements training of the StationProfileAll feature
+- Station_profile.py: Implements training of the StationProfile feature
+- User_profile.py: Implements training of the UserProfile feature
+- User_specific_model: Support class for the UserProfile feature
+
+To run the code, data should be located in directory “../data” and the following actions must be taken:
+1) Run the data preparation script with “python preprocessing.py”
+2) Run the script corresponding to the feature one wants to train, e.g. for UserProfile run “python user_profile.py”
+
+The trained model is saved by pickle in “../data/models”.
+
+ 
